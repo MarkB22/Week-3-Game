@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hangman Game</title>
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+
+
+<script type="text/javascript">
+
+
+// This array holds the words we are going to choose from.
+// Feel free to add new words!
+var theWords = ['cat', 'tree', 'swing', 'around', 'scientist', 'burger', 'dog', 'Tug Boat', 'bacon', 'horse', 'fight', 'fire' ];
+var userGuess;
+var goodLetters = new Array();
+var badGuesses= 0;
+
+userGuess = prompt("Pick A Letter")
+console.log(userGuess) 
+
+chooseWord(userGuess);
+// This function will pick our word
+function chooseWord (word) {
+		var i = Math.floor(Math.random()* theWords.length)
+		console.log(theWords[i])
+
+
+}    
+	function guessLetter( letter, shown, answer ) {
+    var checkLetter = -1;  // This variable will hold the indexOf()
+    checkLetter = answer.indexOf(letter); // Single Argument Version starting at 0
+    while ( checkLetter >= 0 ) {
+        
+        // Replace the letter in shown with alterAt() and then store in shown.
+        
+        // Use indexOf() again and store in checkLetter
+        
+    }
+ 
+    
+
+
+    // Write code here
+    // document.onkeyup = function(event) {
+    	// document.onkeyup = function(event) {
+	var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
+}
+	
+
+
+
+
+
+
+
+
+	// var userGuess = String.fromCharCode(event.keyCode).toLowerCase(); 
+	 
+
+// }
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </html>
